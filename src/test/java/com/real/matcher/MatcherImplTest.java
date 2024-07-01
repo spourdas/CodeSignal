@@ -37,7 +37,7 @@ public class MatcherImplTest {
     }
     LOGGER.info("Total items matched: {}", idMappings.size());
     // test the results
-    assertTrue(idMappings.size() > 0, "Nothing matched!");
+      assertFalse(idMappings.isEmpty(), "Nothing matched!");
     var seenExternal = new HashSet<UUID>();
     for (var mapping : idMappings) {
       var internalId = mapping.getInternalId();

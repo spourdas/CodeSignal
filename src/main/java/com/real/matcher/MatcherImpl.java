@@ -196,7 +196,7 @@ public class MatcherImpl implements Matcher {
             }
 
             for (Future<List<IdMapping>> future : futures) {
-                List<IdMapping> newList = null;
+                List<IdMapping> newList;
                 try {
                     newList = future.get();
                 } catch (InterruptedException e) {

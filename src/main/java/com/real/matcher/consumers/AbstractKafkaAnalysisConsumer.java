@@ -17,7 +17,7 @@ import java.time.Duration;
 import java.util.*;
 
 public abstract class AbstractKafkaAnalysisConsumer {
-    private static Logger logger = LoggerFactory.getLogger(AbstractKafkaAnalysisConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(AbstractKafkaAnalysisConsumer.class);
 
     private static KafkaConsumer<String, String> kafkaConsumer(String groupId) throws IOException {
 

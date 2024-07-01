@@ -19,7 +19,7 @@ import java.util.Properties;
 import java.util.Set;
 
 public abstract class AbstractKafkaStoreConsumer {
-    private static Logger logger = LoggerFactory.getLogger(AbstractKafkaStoreConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(AbstractKafkaStoreConsumer.class);
 
     private static KafkaConsumer<String, String> kafkaConsumer(String groupId) throws IOException {
 
